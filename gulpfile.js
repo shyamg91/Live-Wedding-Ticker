@@ -169,14 +169,9 @@ gulp.task('wiredep', () => {
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({ title: 'build', gzip: true }));
 });
-gulp.task('serveprod', function () {
-  connect.server({
-    root: 'app',
-    port: process.env.PORT || 9000, // localhost:5000
-    livereload: false
-  });
+gulp.task('heroku:production', function () {
+  console.log('herokuduction');
 });
-
 gulp.task('default', () => {
   return new Promise(resolve => {
     dev = false;
