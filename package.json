@@ -42,5 +42,8 @@
         "single"
       ]
     }
+  },
+  "scripts": {
+    "start": "node app/index.js"
   }
 }
