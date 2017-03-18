@@ -169,9 +169,6 @@ gulp.task('wiredep', () => {
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({ title: 'build', gzip: true }));
 });
-gulp.task('heroku:', function () {
-  console.log('herokuduction');
-});
 gulp.task('default', () => {
   return new Promise(resolve => {
     dev = false;
