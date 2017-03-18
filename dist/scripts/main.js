@@ -1,0 +1,1 @@
+function calculateTime(){var e=moment(),a=moment("2017-11-30"),s=a.diff(e,"days"),f=a.diff(e,"hours"),i=a.diff(e,"minutes"),l=a.diff(e,"seconds");$("#days").val(s),$("#minutes").val(i),$("#hours").val(f),$("#seconds").val(l)}setInterval(calculateTime,1e3);

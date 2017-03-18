@@ -4,7 +4,7 @@ var morgan = require('morgan');
 var app = express();
 
 app.use(morgan('dev'));
-app.use(gzippo.staticGzip("" + __dirname + "/app"));
+app.use(gzippo.staticGzip("" + __dirname + "/dist"));
 app.get('/', function (req, res) {
   res.redirect('/index.html');
 })
